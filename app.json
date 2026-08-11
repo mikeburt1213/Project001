@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "ShopSnap List",
+    "slug": "project001",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1220"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.project001.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take photos of products to add them to your shopping list.",
+        "NSPhotoLibraryUsageDescription": "Choose product photos to add them to your shopping list."
+      }
+    },
+    "android": {
+      "package": "com.project001.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1220",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow ShopSnap List to access your photos so you can add products to your shopping list.",
+          "cameraPermission": "Allow ShopSnap List to use the camera to photograph products for your shopping list."
+        }
+      ]
+    ]
+  }
+}
